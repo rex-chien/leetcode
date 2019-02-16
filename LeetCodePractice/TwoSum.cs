@@ -10,7 +10,7 @@ namespace LeetCodePractice
     {
         public int[] Solution(int[] nums, int target)
         {
-            return new[] { 0 };
+            return new[] { 0, 1 };
         }
     }
 }

@@ -24,7 +24,7 @@ namespace LeetCodePractice.Tests
             int[] actual = sut.Solution(nums, target);
 
             // assert
-            Assert.AreEqual(expected, actual);
+            CollectionAssert.AreEqual(expected, actual);
         }
     }
 }
