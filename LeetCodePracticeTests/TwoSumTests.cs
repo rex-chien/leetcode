@@ -12,9 +12,19 @@ namespace LeetCodePractice.Tests
     public class TwoSumTests
     {
         [TestMethod()]
-        public void SolutionTest()
+        public void SolutionTest_nums_0_0_target_0_return_0_1()
         {
-            Assert.Fail();
+            // arrange
+            TwoSum sut = new TwoSum();
+            int[] nums = { 0, 0 };
+            int target = 0;
+            int[] expected = { 0, 1 };
+
+            // act
+            int[] actual = sut.Solution(nums, target);
+
+            // assert
+            Assert.AreEqual(expected, actual);
         }
     }
 }

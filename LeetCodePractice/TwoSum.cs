@@ -10,7 +10,7 @@ namespace LeetCodePractice
     {
         public int[] Solution(int[] nums, int target)
         {
-            throw new NotImplementedException();
+            return new[] { 0 };
         }
     }
 }
