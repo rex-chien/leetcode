@@ -26,5 +26,21 @@ namespace LeetCodePractice.Tests
             // assert
             CollectionAssert.AreEqual(expected, actual);
         }
+
+        [TestMethod]
+        public void SolutionTest_nums_1_2_target_3_return_0_1()
+        {
+            // arrange
+            TwoSum sut = new TwoSum();
+            int[] nums = { 1, 2 };
+            int target = 3;
+            int[] expected = { 0, 1 };
+
+            // act
+            int[] actual = sut.Solution(nums, target);
+
+            // assert
+            CollectionAssert.AreEqual(expected, actual);
+        }
     }
 }
