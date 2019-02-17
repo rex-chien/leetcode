@@ -8,33 +8,48 @@ using System.Threading.Tasks;
 
 namespace LeetCodePractice.Tests
 {
-    [TestClass()]
+    [TestClass]
     public class TwoSumTests
     {
-        [TestMethod()]
+        private TwoSum sut;
+
+        [TestInitialize]
+        public void Initialize()
+        {
+            sut = new TwoSum();
+        }
+
+        [TestMethod]
         public void SolutionTest_nums_0_0_target_0_return_0_1()
         {
             // arrange
-            TwoSum sut = new TwoSum();
             int[] nums = { 0, 0 };
             int target = 0;
             int[] expected = { 0, 1 };
 
             // act
-            int[] actual = sut.Solution(nums, target);
 
             // assert
-            CollectionAssert.AreEqual(expected, actual);
+            GivenNumsAndTargetShouldEqual(nums, target, expected);
         }
 
         [TestMethod]
         public void SolutionTest_nums_1_2_target_3_return_0_1()
         {
             // arrange
-            TwoSum sut = new TwoSum();
             int[] nums = { 1, 2 };
             int target = 3;
             int[] expected = { 0, 1 };
+
+            // act
+
+            // assert
+            GivenNumsAndTargetShouldEqual(nums, target, expected);
+        }
+
+        public void GivenNumsAndTargetShouldEqual(int[] nums, int target, int[] expected)
+        {
+            // arrange
 
             // act
             int[] actual = sut.Solution(nums, target);
