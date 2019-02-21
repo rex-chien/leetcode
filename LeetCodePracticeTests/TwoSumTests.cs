@@ -75,6 +75,21 @@ namespace LeetCodePractice.Tests
             GivenNumsAndTargetShouldEqual(nums, target, expected);
         }
 
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentException))]
+        public void SolutionTest_nums_2_1_7_5_target_4_throw_ArgumentException()
+        {
+            // arrange
+            int[] nums = { 2, 1, 7, 5 };
+            int target = 4;
+            int[] expected = {};
+
+            // act
+
+            // assert
+            GivenNumsAndTargetShouldEqual(nums, target, expected);
+        }
+
         private void GivenNumsAndTargetShouldEqual(int[] nums, int target, int[] expected)
         {
             // arrange
