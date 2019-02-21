@@ -1,12 +1,12 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using LeetCodePractice;
+using LeetCodePractice.Easy;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LeetCodePractice.Tests
+namespace LeetCodePractice.Easy.Tests
 {
     [TestClass]
     public class TwoSumTests
