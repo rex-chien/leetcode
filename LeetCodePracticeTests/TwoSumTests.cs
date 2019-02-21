@@ -47,7 +47,21 @@ namespace LeetCodePractice.Tests
             GivenNumsAndTargetShouldEqual(nums, target, expected);
         }
 
-        public void GivenNumsAndTargetShouldEqual(int[] nums, int target, int[] expected)
+        [TestMethod]
+        public void SolutionTest_nums_1_2_3_target_4_return_0_2()
+        {
+            // arrange
+            int[] nums = { 1, 2, 3 };
+            int target = 4;
+            int[] expected = { 0, 2 };
+
+            // act
+
+            // assert
+            GivenNumsAndTargetShouldEqual(nums, target, expected);
+        }
+
+        private void GivenNumsAndTargetShouldEqual(int[] nums, int target, int[] expected)
         {
             // arrange
 
