@@ -23,6 +23,12 @@ namespace LeetCodePracticeTests.Medium
         {
             GivenInputAndNumRowsShouldGet("LEETCODEPRACTICE", 4, "LDTEOECIECPACTRE");
         }
+        
+        [TestMethod]
+        public void SolutionTest_PAYPALISHIRING_1_Rows_Should_Get_PAYPALISHIRING()
+        {
+            GivenInputAndNumRowsShouldGet("PAYPALISHIRING", 1, "PAYPALISHIRING");
+        }
 
         private static void GivenInputAndNumRowsShouldGet(string input, int numRows, string expected)
         {
