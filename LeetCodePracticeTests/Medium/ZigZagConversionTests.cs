@@ -11,6 +11,12 @@ namespace LeetCodePracticeTests.Medium
         {
             GivenInputAndNumRowsShouldGet("PAYPALISHIRING", 3, "PAHNAPLSIIGYIR");
         }
+        
+        [TestMethod]
+        public void SolutionTest_PAYPALISHIRING_4_Rows_Should_Get_PINALSIGYAHRPI()
+        {
+            GivenInputAndNumRowsShouldGet("PAYPALISHIRING", 4, "PINALSIGYAHRPI");
+        }
 
         private static void GivenInputAndNumRowsShouldGet(string input, int numRows, string expected)
         {
