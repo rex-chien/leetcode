@@ -29,11 +29,11 @@ namespace LeetCodePracticeTests.Medium
             var sut = new AddTwoNumbers();
 
             // act
-            var actual = sut.Solution(l1, l2);
             var expected = CreateListNodes(expectedNumbers);
+            var actual = sut.Solution(l1, l2);
 
             // assert
-            actual.ToExpectedObject().ShouldEqual(expected);
+            expected.ToExpectedObject().ShouldEqual(actual);
         }
 
         private ListNode CreateListNodes(int[] numbers)
