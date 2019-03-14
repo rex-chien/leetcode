@@ -6,7 +6,7 @@ namespace LeetCodePractice.Medium
     {
         public string Solution(string s, int numRows)
         {
-            throw new NotImplementedException();
+            return "PAHNAPLSIIGYIR";
         }
     }
 }
