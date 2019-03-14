@@ -20,6 +20,12 @@ namespace LeetCodePracticeTests.Medium
         {
             GivenTwoNumbersArrayShouldGet(new[] {1, 2, 3}, new[] {4, 5, 6}, new[] {5, 7, 9});
         }
+        
+        [TestMethod]
+        public void SolutionTest_l1_4_5_l2_7_5_2_Output_1_1_3()
+        {
+            GivenTwoNumbersArrayShouldGet(new[] {4, 5}, new[] {7, 5, 2}, new[] {1, 1, 3});
+        }
 
         private void GivenTwoNumbersArrayShouldGet(int[] numbers1, int[] numbers2, int[] expectedNumbers)
         {
