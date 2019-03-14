@@ -12,24 +12,29 @@ namespace LeetCodePracticeTests.Medium
         [TestMethod]
         public void SolutionTest_l1_2_4_3_l2_5_6_4_Output_7_0_8()
         {
+            GivenTwoNumbersArrayShouldGet(new[] {2, 4, 3}, new[] {5, 6, 4}, new[] {7, 0, 8});
+        }
+
+        private void GivenTwoNumbersArrayShouldGet(int[] numbers1, int[] numbers2, int[] expectedNumbers)
+        {
             // arrange
-            ListNode l1 = CreateListNodes(2, 4, 3);
-            ListNode l2 = CreateListNodes(5, 6, 4);
+            var l1 = CreateListNodes(numbers1);
+            var l2 = CreateListNodes(numbers2);
             var sut = new AddTwoNumbers();
 
             // act
             var actual = sut.Solution(l1, l2);
-            ListNode expected = CreateListNodes(7, 0, 8);
+            var expected = CreateListNodes(expectedNumbers);
 
             // assert
             actual.ToExpectedObject().ShouldEqual(expected);
         }
 
-        private ListNode CreateListNodes(params int[] numbers)
+        private ListNode CreateListNodes(int[] numbers)
         {
-            ListNode output = new ListNode(numbers[0]);
-            ListNode currentNode = output;
-            
+            var output = new ListNode(numbers[0]);
+            var currentNode = output;
+
             foreach (var n in numbers.Skip(1))
             {
                 currentNode.next = new ListNode(n);
