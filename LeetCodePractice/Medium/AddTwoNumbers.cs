@@ -23,6 +23,11 @@ namespace LeetCodePractice.Medium
                 currentNode.next = new ListNode(sum % 10);
                 currentNode = currentNode.next;
             }
+
+            if (exceedValue > 0)
+            {
+                currentNode.next = new ListNode(exceedValue);
+            }
             
             return head.next;
         }
