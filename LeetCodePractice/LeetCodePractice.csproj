@@ -44,6 +44,7 @@
     <Compile Include="Class1.cs" />
     <Compile Include="ListNode.cs" />
     <Compile Include="Medium\AddTwoNumbers.cs" />
+    <Compile Include="Medium\QueueReconstrunctionByHeight.cs" />
     <Compile Include="Medium\ZigZagConversion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Easy\TwoSum.cs" />
