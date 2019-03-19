@@ -2,7 +2,7 @@ using System;
 
 namespace LeetCodePractice.Medium
 {
-    public class QueueReconstrunctionByHeight
+    public class QueueReconstructionByHeight
     {
         public int[,] ReconstructQueue(int[,] people)
         {
