@@ -6,28 +6,21 @@ namespace LeetCodePractice.Medium
 {
     public class QueueReconstructionByHeight
     {
-        public int[,] ReconstructQueue(int[,] people)
+        public int[][] ReconstructQueue(int[][] people)
         {
-            var output = new int[people.GetLength(0), 2];
+            var output = new List<int[]>();
 
-            var tuples = Enumerable.Range(0, people.GetLength(0))
-                .Select(i => new Tuple<int, int>(people[i, 0], people[i, 1]));
-            var sortedTuples = tuples.OrderByDescending(t => t.Item1).ThenBy(t => t.Item2);
-            var resultTuples = new List<Tuple<int, int>>();
+            var sortedPeople = people
+                .OrderByDescending(p => p[0])
+                .ThenBy(p => p[1])
+                .ToList();
             
-            foreach (var tuple in sortedTuples)
+            foreach (var person in sortedPeople)
             {
-                resultTuples.Insert(tuple.Item2, tuple);
-            }
-            
-            for (var i = 0; i < resultTuples.Count; i++)
-            {
-                var tuple = resultTuples[i];
-                output[i, 0] = tuple.Item1;
-                output[i, 1] = tuple.Item2;
+                output.Insert(person[1], person);
             }
 
-            return output;
+            return output.ToArray();
         }
     }
 }
