@@ -22,6 +22,15 @@ namespace LeetCodePracticeTests.Medium
                 new[,] {{4, 0}, {6, 0}, {8, 0}, {3, 3}, {6, 2}, {7, 1}, {4, 5}});
         }
 
+        [TestMethod]
+        public void ReconstructQueueTest_3()
+        {
+            GivenInputShouldExpectedOutput(
+                new[,] {{5, 0}, {6, 0}, {3, 4}, {2, 1}, {2, 3}, {4, 1}, {5, 2}, {3, 0}},
+                new[,] {{3, 0}, {2, 1}, {5, 0}, {2, 3}, {4, 1}, {6, 0}, {3, 4}, {5, 2}});
+        }
+
+
         private static void GivenInputShouldExpectedOutput(int[,] input, int[,] expected)
         {
             // arrange
