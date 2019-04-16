@@ -44,6 +44,7 @@
     <Compile Include="Class1.cs" />
     <Compile Include="ListNode.cs" />
     <Compile Include="Medium\AddTwoNumbers.cs" />
+    <Compile Include="Medium\ContainsDuplicateIII.cs" />
     <Compile Include="Medium\QueueReconstructionByHeight.cs" />
     <Compile Include="Medium\ZigZagConversion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
