@@ -16,6 +16,16 @@ namespace LeetCodePracticeTests.Medium
                 true);
         }
 
+        [TestMethod]
+        public void ReconstructQueueTest_nums_1_5_9_k_1_t_3_Expected_false()
+        {
+            GivenNumsAndKAndTShouldEqual(
+                new[] {1, 5, 9},
+                1,
+                3,
+                false);
+        }
+
         private static void GivenNumsAndKAndTShouldEqual(int[] nums, int k, int t, bool expected)
         {
             // arrange
