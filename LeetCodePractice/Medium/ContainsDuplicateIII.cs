@@ -6,7 +6,7 @@ namespace LeetCodePractice.Medium
     {
         public bool ContainsNearbyAlmostDuplicate(int[] nums, int k, int t)
         {
-            throw new NotImplementedException();
+            return true;
         }
     }
 }
